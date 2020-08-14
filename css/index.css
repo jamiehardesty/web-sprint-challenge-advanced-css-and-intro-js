@@ -81,7 +81,7 @@ nav span{
     border-left:3px solid #626262;
 
 }
-@media screen and (max-width:900px) and (min-width:500px){
+@media screen and (max-width:900px) and (min-width:500px), (max-width: 500px){
     nav {
         width: 55%;
     }
@@ -124,7 +124,7 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
-@media screen and (max-width:900px) and (min-width:500px){
+@media screen and (max-width:900px) and (min-width:500px), (max-width: 500px){
     .title-container div {
         width: 100%;
     }
@@ -136,7 +136,6 @@ button:hover{
     width:80%;
     margin:0 auto;
 }
-
 .artist{
     width:40%;
     text-align:center;
