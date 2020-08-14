@@ -81,6 +81,11 @@ nav span{
     border-left:3px solid #626262;
 
 }
+@media(min-width:500px){
+    nav {
+        width: 55%;
+    }
+}
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -118,6 +123,11 @@ button:hover{
     border:2px solid white;
     color:white;
     box-shadow: 2px 2px 1px white;
+}
+@media(min-width:500px){
+    .title-container div {
+        width: 100%;
+    }
 }
 /*Artists Section Styles */
 .artists-container{
