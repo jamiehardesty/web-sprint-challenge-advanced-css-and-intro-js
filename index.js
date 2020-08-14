@@ -234,19 +234,18 @@ getArtistByIndex(artists, 0);
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
-const getYears = [];
+
 function get20s(array){
-  // arguments[3] = getYears;
-  console.log(array.years);
+  let newYears = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].years >= "1900" &&  array[i].years < "2000"){
+      newYears.push(array[i].name);
+    }
+  }
+  return newYears;
 }
-get20s(artists)
-  // for(let i = 0; i < array.length; i++){
-  //   if(array[i].years === years){
-  //     getYears.push(array[i]);
-  //   }
-  // }
-  // return getYears;
-// }
+console.log(get20s(artists));
+
 // get20s(artists, "1900-2000");
 // console.log(getYears);
 // return ["Salvador Dali", "Frida Kahlo"]
