@@ -210,10 +210,13 @@ const artists = [
 console.log(artists[0]);
 console.log(artists[2].bio);
 
-
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
-
+function misterDough(arr, i, name){
+  arr[i].name = name;
+  return arr;
+}
+misterDough(artists,8,"Vincent Van Gogh");
+console.log(artists[8]);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
