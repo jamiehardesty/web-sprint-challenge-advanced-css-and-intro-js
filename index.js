@@ -347,13 +347,13 @@ function getHTML(/* Code here */){
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 
-let randomArr = ["mainecoon","russian blue","tuxedo kitties"];
+let randomArr = ["mainecoon","russian blue","tuxedo kitties","lions","lynxes"];
 const maybe = randomArr.sort(randomize);
 // won't accept line 354 unless written like this
 function randomize(){
   return 0.5 - Math.random(); 
   } // Math.random returns a value of 0-1
-  // 0.25 as a value returns a different order but it's the same every time as is 0.75
+  // under a sample of 3 items, 0.25 as a value returns a different order but it's the same every time as is 0.75
 console.log(maybe);
 
 
