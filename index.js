@@ -279,12 +279,21 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should return the new array with information added"*/
-
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+//id, name, years, genre, nationality, bio, paintings
+const newArtist = [{
+  "id": 28,
+  "name": "Jamie Hardesty",
+  "years": "199X - Present",
+  "genre": "...is cute a genre?",
+  "nationality": "3/4ths Asian, 1/4th Caucasian",
+  "bio": "Jamie was born in Chicago, 2 days after Karlie Kloss."
   }
+]
+function addArtist(array){
+  array.unshift(newArtist);
+  console.log(array);
+}
+addArtist(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
