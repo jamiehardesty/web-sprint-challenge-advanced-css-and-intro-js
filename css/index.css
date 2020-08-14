@@ -143,3 +143,12 @@ button:hover{
 .artist img{
     width:100%;
 }
+@media screen and (max-width:900px) and (min-width:500px), (max-width: 500px){
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .artist {
+        width: 100%;
+    }
+}
